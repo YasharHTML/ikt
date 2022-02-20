@@ -1,2 +1,8 @@
 n = int(input()) # time in seconds
-print("HH:MM:SS -> {0}:{1}:{2}".format(n // 3600, n // 60 % 60, n % 60)) # convert to time
+# seconds to days, hours, minutes, seconds
+days = n // 86400
+hours = (n % 86400) // 3600
+minutes = (n % 3600) // 60
+seconds = n % 60
+
+print("D:HH:MM:SS -> {:02d}:{:02d}:{:02d}:{:02d}".format(days, hours, minutes, seconds)) # convert to time
