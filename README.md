@@ -1,2 +1,2 @@
 # ikt
-plz add questions
+plz add answers
