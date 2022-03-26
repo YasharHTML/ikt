@@ -4,10 +4,10 @@ n = []
 m = [21, 17, 15]
 d = []
 q = 0
-l = 15
-for i in range(l):
-    for j in range(l):
-        for k in range(l):
+l = (9, 11, 13)
+for i in range(l[0]):
+    for j in range(l[1]):
+        for k in range(l[2]):
             z = [i, j, k]
             if z[0]*m[0] + z[1]*m[1] + z[2]*m[2] == 185:
                 q += 1

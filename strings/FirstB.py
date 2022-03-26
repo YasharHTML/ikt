@@ -1,0 +1,1 @@
+print("The number of the found words is:", len(input("Enter: ").split()))
