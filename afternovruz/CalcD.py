@@ -31,7 +31,6 @@ n = n[:par[0]] + str(q) + n[par[1] + 1:]
 if flag:
     sum_ = 0
     new_s = ""
-
     for i in range(len(n)):
         if n[i] == "-":
             new_s += "+"
@@ -46,6 +45,7 @@ for i in range(len(n)):
         li += [n[k:i]]
         li += [n[i]]
         k = i + 1
+
 li += [n[k:]]
 for i in range(len(li)):
     count_of_p = 0
@@ -88,6 +88,7 @@ for i in range(len(li)):
             li[i] = str(int(z[0]) // int(z[1]) // int(z[2]))
         print(li[i])
         sys.exit("Done!")
+        
 if not flag:
     if "+" in li:
         print(int(li[0]) + int(li[2]))
